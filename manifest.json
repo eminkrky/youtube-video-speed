@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Gelişmiş Hız Kontrolü",
+  "version": "1.0",
+  "description": "YouTube videolarının hızını 10x'e kadar ayarlamanızı sağlar",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
